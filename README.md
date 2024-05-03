@@ -7,6 +7,8 @@ Please check out our work [here](https://arxiv.org/pdf/2402.13249.pdf) 📃
 
 This repository contains the annotations for the released benchmark dataset TofuEval. **Note that this is an evaluation benchmark. Data in the benchmark should not be used in training NLP models.**
 
+On 05.03.2024, an identifier 64-character string is added to each instance in TofuEval to assist in future detection of contamination in web-crawl corpora.
+
 <p align="center">
     <img src="./images/tofueval_main.png" width="280">
 </p>
@@ -76,6 +78,7 @@ mediasum_test = obtain_dialogue_mediasum(dialogue_test).to_csv("mediasum_test_do
 |sent_label| `yes` if the summary sentence is factual consistent, `no` otherwise.|
 |exp| Human written explanation for why {summ_sent} is factually inconsistent.|
 |type| Human annotated error type(s) for {summ_sent}. A sentence can have multiple error types.|
+|contamination_identifier| An identification string for contamination detection.|
 
 ### Update: Extra Annotations
 
