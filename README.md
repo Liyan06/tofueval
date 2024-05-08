@@ -78,7 +78,6 @@ mediasum_test = obtain_dialogue_mediasum(dialogue_test).to_csv("mediasum_test_do
 |sent_label| `yes` if the summary sentence is factual consistent, `no` otherwise.|
 |exp| Human written explanation for why {summ_sent} is factually inconsistent.|
 |type| Human annotated error type(s) for {summ_sent}. A sentence can have multiple error types.|
-|contamination_identifier| An identification string for contamination detection.|
 
 ### Update: Extra Annotations
 
